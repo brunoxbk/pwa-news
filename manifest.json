@@ -1,0 +1,51 @@
+{
+  "name": "News PWA",
+  "short_name": "NewsPWA",
+  "theme_color": "#2a0044",
+  "background_color": "#2a0044",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "images/icones/android/android-launchericon-512-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icones/android/android-launchericon-192-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icones/android/android-launchericon-96-96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icones/android/android-launchericon-72-72.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icones/firefox/firefox-general-64-64.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icones/firefox/firefox-general-48-48.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icones/firefox/firefox-general-32-32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icones/chrome/chrome-favicon-16-16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>News PWA</title>
+    <link rel="stylesheet" href="/styles/bulma.min.css">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="shortcut icon" href="images/icones/chrome/chrome-favicon-16-16.png" type="image/x-icon">
+    <link rel="icon" href="images/icones/chrome/chrome-favicon-16-16.png" type="image/x-icon">
+
+    <!-- ios support -->
+  <link rel="apple-touch-icon" href="images/icones/android/android-launchericon-72-72.png" />
+  <link rel="apple-touch-icon" href="images/icones/firefox/firefox-general-64-64.png" />
+  
+  <meta name="apple-mobile-web-app-status-bar" content="#2a0044" />
+
+    <meta name="theme-color" content="#2a0044" />
+  </head>
+  <body>
+    <nav class="navbar is-transparent">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+          <img src="images/icones/firefox/firefox-general-64-64.png" alt="News" width="64" height="64">
+        </a>
+        <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    
+      <div id="navbarExampleTransparentExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="/">
+            Home
+          </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link" href="#">
+              Fontes
+            </a>
+            <div class="navbar-dropdown is-boxed" id="sources">
+              <a class="navbar-item" href="#">
+                Overview
+              </a>
+            </div>
+          </div>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link" href="#">
+              Categorias
+            </a>
+            <div class="navbar-dropdown is-boxed">
+              <a class="navbar-item" href="#" data-id="business">
+                Negócios      
+              </a>
+              <a class="navbar-item" href="#" data-id="entertainment">
+                Entretenimento
+              </a>
+              <a class="navbar-item" href="#" data-id="general">
+                Geral
+              </a>
+              <a class="navbar-item" href="#" data-id="health">
+                Saúde
+              </a>
+              <a class="navbar-item" href="#" data-id="science">
+                Ciência
+              </a>
+              <a class="navbar-item" href="#" data-id="sports">
+                Esportes
+              </a>
+              <a class="navbar-item" href="#" data-id="technology">
+                Tecnologia
+              </a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="navbar-end">
+          <!--div class="navbar-item">
+            <div class="field is-grouped">
+              <p class="control">
+                <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet" data-social-target="https://bulma.io" target="_blank" href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=https://bulma.io&amp;via=jgthms">
+                  <span class="icon">
+                    <i class="fab fa-twitter"></i>
+                  </span>
+                  <span>
+                    Tweet
+                  </span>
+                </a>
+              </p>
+              <p class="control">
+                <a class="button is-primary" href="https://github.com/jgthms/bulma/releases/download/0.8.2/bulma-0.8.2.zip">
+                  <span class="icon">
+                    <i class="fas fa-download"></i>
+                  </span>
+                  <span>Download</span>
+                </a>
+              </p>
+            </div>
+          </div-->
+        </div>
+      </div>
+    </nav>
+
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <button id="add" style="display: none;" class="button is-small is-info is-outlined is-fullwidth">Adicionar a tela principal</button>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column">
+            <section class="hero">
+              <div class="hero-body">
+                <div class="container">
+                  <h1 class="title">
+                    News PWA
+                  </h1>
+                  <h2 class="subtitle">
+                    Instalable
+                  </h2>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="columns is-mobile is-multiline" id="cards">
+          
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="/js/navbar.js"></script>
+  <script src="/js/app.js"></script>
+</html>
