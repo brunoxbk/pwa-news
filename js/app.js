@@ -5,6 +5,7 @@
       const sourceSelector = document.querySelector('#sources');
       const newsArticles = document.querySelector('#cards');
       const btnInstall = document.querySelector('#add');
+      const shareBtn = document.querySelectorAll('.share');
       let deferredPrompt;
 
       const requestNotificationPermission = async () => {
@@ -64,29 +65,29 @@
       function createArticle(article) {
         return `
         <div class="column is-one-quarter-tablet is-one-quarter-desktop is-full-mobile">
-            <div class="card">
+          <div class="card">
             <div class="card-image">
-            <figure class="image is-4by3">
+              <figure class="image is-4by3">
                 <img src="${article.urlToImage}" alt="${article.title}">
-            </figure>
+              </figure>
             </div>
             <div class="card-content">
-            <div class="media">
-                <div class="media-content">
+              <div class="content">
                 <p class="title is-4">${article.title}</p>
                 <p class="subtitle is-6">${article.title}</p>
-                </div>
-            </div>
-        
-            <div class="content">
+              </div>
+              <div class="content">
                 ${article.description}
                 <br>
                 <time datetime="2016-1-1">${article.publishedAt}</time>
+              </div>
             </div>
-            </div>
-        </div>
-        </div></div>
-        `;
+            <footer class="card-footer">
+              <!--p onClick="shareNews()" class="card-footer-item share">Share 1</p-->
+              <!--p class="card-footer-item share" >Share 2</p-->
+            </footer>
+          </div>
+        </div>`;
       }
 
       function createSource(source) {
@@ -126,6 +127,19 @@
         // Log install to analytics
         console.log('INSTALL: Success');
       });
+
+
+      /*
+      if (navigator.share) {
+        navigator.share({
+          title: 'web.dev',
+          text: 'Check out web.dev.',
+          url: 'https://web.dev/',
+        })
+          .then(() => console.log('Successful share'))
+          .catch((error) => console.log('Error sharing', error));
+      }
+      */
 
     }
   )();
